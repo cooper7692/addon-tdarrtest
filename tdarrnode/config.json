@@ -1,0 +1,36 @@
+{
+  "name": "Tdarr Node",
+  "version": "1.1.11",
+  "slug": "tdarrnode",
+  "description": "Tdarr Node for distributed media transcoding",
+  "arch": [
+    "amd64",
+    "aarch64"
+  ],
+  "startup": "services",
+  "boot": "auto",
+  "hassio_api": false,
+  "host_network": true,
+  "privileged": [
+    "SYS_ADMIN"
+  ],
+  "map": [
+    "config:rw"
+  ],
+  "options": {
+    "serverIP": "127.0.0.1",
+    "serverPort": "8266",
+    "nodeName": "HA-TdarrNode",
+    "logLevel": "INFO",
+    "startPaused": false,
+    "pollInterval": 2000
+  },
+  "schema": {
+    "serverIP": "str",
+    "serverPort": "str",
+    "nodeName": "str",
+    "logLevel": "str",
+    "startPaused": "bool",
+    "pollInterval": "int"
+  }
+}

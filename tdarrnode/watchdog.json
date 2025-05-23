@@ -1,0 +1,6 @@
+{
+  "watchdog": "Tdarr_Node",
+  "timeout": 60,
+  "interval": 10,
+  "grace": 15
+}
