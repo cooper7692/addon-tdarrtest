@@ -26,3 +26,4 @@ RUN curl -L https://storage.tdarr.io/versions/2.17.01/linux_x64/Tdarr_Updater.zi
 # Copy s6-overlay services and static Tdarr directory
 COPY rootfs /
 COPY tdarr /tdarr
+RUN chmod+x /rootfs/etc/services.d/tdarr/run
